@@ -5,12 +5,69 @@
 .navbar-toggler:focus{
     box-shadow: none;
 }
-
-.offcanvas-start{
-    width: 10px;
+.nav-icon {
+    color: rgb(255, 94, 77); /* Cor laranja */
+    font-size: 2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-left: 15px;
 }
-@media (max-width: 768px) {
-    .offcanvas-start{
-        width: 100px;
-    }
+
+.nav-icon:hover {
+    color: #FFA500; /* Tom mais claro ao passar o mouse */
+}
+
+.container-fluid{
+    margin: 0 200px;
+}
+.offcanvas-header{
+    margin: 0 200px;
+}
+.offcanvas-body{
+    margin: 0 20px;
+}
+
+.Foto{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 94, 77);
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.Foto:hover{
+    transform: scale(1.2);
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+h1{
+    padding-top: 20px;
+}
+.p-sobre{
+    margin: 20px 200px;
+    text-align: center;
+}
+
+.Formação{
+    margin: 0 200px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.projetos{
+    margin: 0 200px;
+    text-align: center;
+}
+
+.btn{
+    background-color: rgb(255, 94, 77);
+    border-color: rgb(255, 94, 77);
+}
+.btn:hover{
+    background-color: #FFA500;
+    border-color: #FFA500;
 }
