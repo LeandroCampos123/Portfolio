@@ -1,3 +1,10 @@
+
+  
+  /* Exibe "Leandro" em telas pequenas (até 768px) */
+@media (max-width: 768px) {
+
+}
+
 .navbar-toggler{
     border: none;
 }
@@ -43,6 +50,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 h1{
     padding-top: 20px;
@@ -50,17 +58,56 @@ h1{
 .p-sobre{
     margin: 20px 200px;
     text-align: center;
+    font-family: sans-serif;
+    font-size: 19px;
+}
+ul{
+    font-size: 19px;
+}
+li{
+    font-weight: bold;
 }
 
-.Formação{
-    margin: 0 200px;
-    padding-top: 200px;
+.curriculum{
     text-align: center;
+}
+
+.curriculo{
+    margin: 0 200px;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .projetos{
     margin: 0 200px;
+    padding-top: 60px;
+}
+.projetos-h1{
     text-align: center;
+}
+.projetos-p{
+    text-align: center;
+    padding-top: 50px;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(255, 94, 77); 
+    font-size: 40px;
+}
+.projetos-ul{
+    text-align: center;
+    list-style-type: none;
+}
+.projetos-ul2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribui os itens entre a esquerda e direita */
+    padding-left: 0;
+    list-style-type: none;
+
+}
+.projetos-ul2 li{
+    width: 40%;
+    margin-bottom: 10px;
+    font-weight: normal;
 }
 
 .btn{
@@ -71,3 +118,83 @@ h1{
     background-color: #FFA500;
     border-color: #FFA500;
 }
+   /* Estilo da miniatura */
+.thumbnail {
+    width: 270px;
+    cursor: pointer;
+    border: 2px solid rgb(255, 94, 77);
+}
+
+    /* Modal de fundo (oculto por padrão) */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+    /* Estilo da imagem expandida */
+.modal img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+    /* Exibir o modal ao clicar (usando o :target) */
+#imagem-expandida:target {
+    display: flex;
+}
+
+    /* Estilo para o botão de fechar */
+.close-btn {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#api{
+    padding-top: 60px;
+}
+.container {
+    display: flex; /* Usamos o Flexbox para centralizar */
+    justify-content: center; /* Alinha o conteúdo horizontalmente */
+}
+.imagem-container {
+    width: 75%; /* Ocupa 100% da largura disponível */
+    height: 370px; /* Defina uma altura limitada para o contêiner */
+    overflow: hidden; /* Esconde o excesso da imagem que ultrapassar o contêiner */
+    position: relative; /* Para possibilitar o efeito de rolagem */
+    cursor: pointer; /* Adiciona um cursor indicando interação */
+    border-radius: 10px;
+}
+.opyon {
+    width: 100%; /* A imagem ocupa a largura do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    animation: flutuar 4s ease-in-out forwards; /* Animação de flutuação */
+    animation-play-state: paused; 
+  }
+
+  /* Keyframes para a animação de flutuação */
+  @keyframes flutuar {
+    0% {
+      transform: translateY(0); /* Começa no seu lugar original */
+    }
+    75% {
+      transform: translateY(-1230px); /* Flutua para cima */
+    }
+    100%{
+        transform: translateY(0);
+    }
+  }
+  .imagem-container:hover .opyon {
+    animation-play-state: running; /* Inicia a animação quando o mouse passa sobre a imagem */
+  }
+

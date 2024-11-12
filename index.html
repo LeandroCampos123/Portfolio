@@ -19,9 +19,10 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <a class="navbar-brand" href="#">Leandro Campos</a>
+              
               <div class="ms-auto d-flex align-items-center">
-                <a href="https://github.com/LeandroCampos123" target="_blank" class="nav-icon me-3"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/leandro-henrique-7b8262329/" target="_blank" class="nav-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/LeandroCampos123" target="_blank" rel="noopener noreferrer" class="nav-icon me-3"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/leandro-henrique-7b8262329/" target="_blank" rel="noopener noreferrer" class="nav-icon"><i class="fab fa-linkedin"></i></a>
               </div>
              
               <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
@@ -38,19 +39,18 @@
                       <a class="nav-link active" aria-current="page" href="#">Quem sou eu</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Certificações</a>
+                      <a class="nav-link" href="#curriculo">Currículo</a>
                     </li>
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
+                        Dev Web
                       </a>
                       <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#projetos">Projetos</a></li>
                         <li>
                           <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#api">API</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -69,53 +69,136 @@
         <p class="p-sobre">Sou Leandro Campos, tenho 22 anos e estou em transição de carreira. Atualmente, trabalho como barbeiro na minha própria barbearia, mas estou buscando novos desafios e oportunidades na área de tecnologia da informação. Faço o curso de Análise e Desenvolvimento de Sistemas na FATEC, onde estou me aprofundando em programação, desenvolvimento de software e metodologias ágeis. Neste portfólio, compartilho minha trajetória, que reflete minha dedicação ao aprendizado e minha vontade de aplicar novos conhecimentos para contribuir com projetos inovadores e desafiadores.</p>
       </section>
     
-      <section class="Formação">
-        <h1>Formação Academica</h1>
-        <p>Cursando Analise e Desenvolvimento de Sistemas na FATEC SJC - Prof° Jensen Vidal (Previsão de conclusão em Junho de 2027)</p>
+      <section class="curriculo" id="curriculo">
+        <h1 class="curriculum">Currículo</h1>
+        <ul>
+          <li>Formação Academica</li>
+          <dd>Cursando Analise e Desenvolvimento de Sistemas na FATEC SJC - Prof° Jensen Vidal (Previsão de conclusão em Junho de 2027)</dd>
+          <li>Competências Tecnicas</li>
+          <dd>Linguagens: <i class="fab fa-python"></i> Python, <i class="fab fa-html5"></i> HTML, <i class="fab fa-css3-alt"></i> CSS</dd>
+          <dd>Frameworks: <i class="fab fa-bootstrap"></i> Bootstrap, <i class="fas fa-flask"></i> Flask</li></dd>
+          <dd>Ferramentas: <i class="fab fa-git-alt"></i> Git, <i class="fab fa-solid fa-database"></i> Access, <i class="fab fa-aws"></i> AWS, <i class="fa-solid fa-code"></i> Visual Studio Code</dd>
+          
+          <li>Certificados:</li>
+          <dd>NDG Linux Unhatched - CISCO</dd>
+          <a href="#imagem-expandida">
+            <img src="NDG LINUX.png" alt="Miniatura" class="thumbnail">
+          </a>
+          <div id="imagem-expandida" class="modal">
+            <a href="#curriculo" class="close-btn">&times;</a>
+            <img src="NDG LINUX.png" alt="Imagem Expandida">
+          </div>
+        </ul>
 
       </section>
 
-      <section class="projetos">
-        <h1>Projetos</h1>
-        <p>Alguns projetos desenvolvidos na Fatec</p>
+      <section class="projetos" id="projetos">
+        <h1 class="projetos-h1">Projetos</h1>
+        <p class="projetos-p">Desenvolvimento Web</p>
         <div class="card-group">
           <div class="card">
             <img src="UNES.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">UNES - Faculdade Ficticia</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="card-text">Este foi o primeiro projeto de página web, desenvolvido como um exercício para aplicar o conceito de Flexbox e Semântica HTML. O site conta com três páginas interligadas.</p>
             </div>
             <div class="card-footer">
-              <a href="https://leandrocampos123.github.io/UNES_Faculdade_Ficticia/" class="btn btn-primary" role="button" aria-disabled="true">Primary link</a>
+              <a href="https://leandrocampos123.github.io/UNES_Faculdade_Ficticia/" class="btn btn-primary" role="button" aria-disabled="true">Acessar</a>
             </div>
           </div>
           <div class="card">
             <img src="Barbearia.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Barbearia Pedrock</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <p class="card-text">Site de página unica, feito para praticar o uso do Bootstrap, contendo 8 funcionalidades do Framework.</p>
             </div>
             <div class="card-footer">
-              <a href="https://leandrocampos123.github.io/site_barbearia/" class="btn btn-primary" role="button" aria-disabled="true">Primary link</a>
+              <a href="https://leandrocampos123.github.io/site_barbearia/" class="btn btn-primary" role="button" aria-disabled="true">Acessar</a>
             </div>
           </div>
           <div class="card">
             <img src="Portfolio.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Portfolio</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Desenvolvido com uma estrutura simples e funcional para apresentar meus projetos, certificados e currículo de forma organizada. Cada seção é projetada para destacar minhas habilidades e experiência de maneira clara e objetiva.</p>
             </div>
             <div class="card-footer">
-              <a href="#sobre" class="btn btn-primary" role="button" aria-disabled="true">Primary link</a>
+              <a href="#sobre" class="btn btn-primary" role="button" aria-disabled="true">Acessar</a>
             </div>
           </div>
         </div>
+
+        
+        <p class="projetos-p" id="api">Plataforma de aprendizado SCRUM (API)</p>
+        <div class="container">
+          <div class="imagem-container">
+            <img src="opyon.png" alt="siteAPI" class="opyon">
+          </div>
+        </div>
+        <ul class="projetos-ul">
+          <li>Descrição:</li>
+            <dl>Aplicaçao web de instruções para desenvolvimento de projetos agéis (SCRUM) na área de TI.</dl>
+          <li>Desafio:</li>
+            <dl>Criar um sistema web que apresente todos os processos e artefatos da metodologia ágil (Scrum), fornecendo explicações detalhadas sobre seus conceitos e fundamentos. O sistema também incluirá exemplos práticos para garantir que o usuário compreenda completamente a aplicação da metodologia.
+            </dl>
+          <li>Tecnologias utilizadas:</li>
+            <ul class="projetos-ul2">
+              <li>
+                Jira
+              </li>
+              <li>
+                Git
+              </li>
+              <li>
+                GitHub
+              </li>
+              <li>
+                AWS
+              </li>
+              <li>
+                Figma
+              </li>
+              <li>
+                Notion
+              </li>
+              <li>
+                HTML5
+              </li>
+              <li>
+                CSS3
+              </li>
+              <li>
+                JavaScript
+              </li>
+              <li>
+                Flask
+              </li>
+            </ul>
+        </ul>
       </section>
 
       <section class="certificações">
 
       </section>
     </main>
+
+
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p>&copy; 2024 Leandro Campos. Todos os direitos reservados.</p>
+            <div class="social-icons">
+              <a href="https://github.com/LeandroCampos123" target="_blank" rel="noopener noreferrer" class="nav-icon me-3"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/leandro-henrique-7b8262329/" target="_blank" rel="noopener noreferrer" class="nav-icon me-3"><i class="fab fa-linkedin"></i></a>
+              <a href="mailto:leandro.silva388@fatec.sp.gov.br" class="nav-icon"><i class="fas fa-envelope"></i></a> <!-- E-mail -->
+            </div>
+            <p>Entre em contato: <a href="mailto:leandro.silva388@fatec.sp.gov.br" class="text-white">leandro.silva388@fatec.sp.gov.br</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
     
 </body>
 </html>
