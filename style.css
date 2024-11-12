@@ -197,4 +197,9 @@ li{
   .imagem-container:hover .opyon {
     animation-play-state: running; /* Inicia a animação quando o mouse passa sobre a imagem */
   }
+  .repo-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 60px;
+  }
 
